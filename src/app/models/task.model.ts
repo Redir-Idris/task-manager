@@ -1,4 +1,5 @@
 // Task model definition for a project management application
+
 export interface Task {
   id: number;
   projectId: number;

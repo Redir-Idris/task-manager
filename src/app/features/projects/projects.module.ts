@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-
+import { ReactiveFormsModule } from '@angular/forms';
 import { ProjectsRoutingModule } from './projects-routing.module';
 
 
@@ -8,7 +8,8 @@ import { ProjectsRoutingModule } from './projects-routing.module';
   declarations: [],
   imports: [
     CommonModule,
-    ProjectsRoutingModule
+    ProjectsRoutingModule,
+    ReactiveFormsModule
   ]
 })
 export class ProjectsModule { }

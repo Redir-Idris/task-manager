@@ -42,5 +42,4 @@ export class TaskService {
   TaskService hanterar API-anrop för uppgifter.
   Den använder HttpClient för att hämta uppgifter från en simulerad API-url.
   Metoder för att skapa, uppdatera och ta bort uppgifter kan läggas till senare.
-
 */

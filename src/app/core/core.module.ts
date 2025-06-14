@@ -1,8 +1,11 @@
-import { NgModule } from "@angular/core";
-import { HttpClientModule } from "@angular/common/http";
+import { NgModule } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
+  declarations: [],
   imports: [
+    CommonModule,
     HttpClientModule
   ]
 })
@@ -10,6 +13,7 @@ import { HttpClientModule } from "@angular/common/http";
 export class CoreModule { }
 
 /* 
+
 Här skapar vi två services som hanterar alla API-anrop
 mot DummyJSON. HttpClient används för att kommunicera med API:t. 
 HttpClientModule måste importeras för att det ska fungera.

@@ -1,7 +1,7 @@
 // API-anrop för projektdata 
 
-import { HttpClient } from "@angular/common/http";
 import { Injectable } from "@angular/core";
+import { HttpClient } from "@angular/common/http";
 import { Observable } from "rxjs";
 import { Project } from '../../models/project.model'; // Importera Project-modellen
 
@@ -27,14 +27,13 @@ export class ProjectService {
   }
 
   // Uppdatera
-  updateProject(id: number): Observable<Project> {
+  updateProject(project: Project): Observable<Project> {
     return this.http.put<Project>(`${this.apiUrl}/${project.id}`, project);
   }
 
   // Radera
   deleteProject(id: number): Observable<void> {
     return this.http.delete<void>(`${this.apiUrl}/${id}`);
-
   }
 }
 
